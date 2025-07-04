@@ -59,8 +59,8 @@ Este puede ser un ejemplo real que te vayas a encontrar en tu trabajo. Hay algo 
 
 ## Parte 2: Completa la clase Character
 
-A la clase combatant le faltan métodos.
-Implementalos. 
+A la clase Character le faltan métodos.
+Impleméntalos. 
 
 \- Pero Marcel, no me has dicho qué métodos debo implementar...
 
