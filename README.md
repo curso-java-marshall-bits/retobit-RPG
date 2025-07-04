@@ -75,7 +75,7 @@ Si intentas ejecutar los tests saltará error y te dirá qué métodos faltan.
 
 Asegúrate de que el status del character cambia a DEAD cuando la vida es 0. Y que la vida no puede ser menor a 0.
 
-## Parte 3: 
+## Parte 3: Añade varias clases heredadas
 
 Crea dos clases que representen tipos específicos de personajes de RPG: Warrior y Mage (se deben llamar así). Estas clases deberán heredar de Character y tener propiedades extra:
 
@@ -86,7 +86,13 @@ Crea dos clases que representen tipos específicos de personajes de RPG: Warrior
 
 ## Testing
 
-Para comprobar si has realizado bien el ejercicio ejecuta los tests ubicados en **src/test**. Pulsa con el botón derecho en el archivo *NumbersAndOperationsTest* y selecciona la opción *Run NumbersAndOperationsTest* 
+Para comprobar si has realizado bien el ejercicio ejecuta los tests ubicados en **src/test**. Hay un archivo para cada parte del RetoBit.
+
+- **CharacterTest**
+- **MageTest**
+- **WarriorTest**
+
+Puedes ejecutar los tests de cada uno de los archivos pulsando en él con el botón derecho y *Run NombreDelArchivoTest*. También puedes pulsar con el botón derecho en la carpeta */test/java* y seleccionar *Run all tests* para ejecutarlos todos a la vez. 
 
 El test te indicará si has pasado con un tick verde ✅. En caso contrario verás el error.
 
@@ -105,7 +111,7 @@ Si quieres ver una posible solución para el retobit que pasa todos los tests pu
 
 ![rama solution](public/img4.png)
 
-Ten en cuenta que hay muchas formas de resolver los ejercicios y la tuya puede pasar los tests iguales, pero ser completamente distinta a la solución. No significa que la tuya esté mal. Compara los resultados y decide cuál te gusta más o te parece mas legible.
+Ten en cuenta que hay muchas formas de resolver los ejercicios y la tuya puede pasar los tests iguales, pero ser completamente distinta a la solución. No significa que la tuya esté mal. Compara los resultados y decide cuál te gusta más o te parece más legible.
 
 ## Entrega
 
