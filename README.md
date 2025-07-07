@@ -1,14 +1,15 @@
 # RetoBit: RPG a medias 🧝
 
-En este RetoBit tenemos un RPG medio empezado, pero el developer es un poco vago y lo dejó a medias 🤔
-Deberás continuar el desarrollo con varias tareas pendientes.
+En este RetoBit tenemos un RPG medio empezado, pero el developer que lo empezó no va a poder seguir con ello, ya que le han asignado otra tarea que debe priorizar.
+Deberás continuar el desarrollo con varias tareas pendientes. 
 
 ## ¿Qué practicarás?
 
-- Herencia
-- Encapsulamiento
 - Clases abstractas
 - Métodos
+- Interpretar diagramas UML
+- Detección de errores
+- Desarrollar a partir de tests (Test Driven Development)
 
 ## Fork del repositorio:
 
@@ -37,7 +38,7 @@ Donde aparece 'curso-java-marshall-bits' debería aparecer tu nombre de usuario.
 
 ![clone](public/img2.png)
 
-Para ello deberás abrir una terminal y navegar a la carpeta donde quieras añadir este retobit.
+Para ello deberás abrir una terminal y navegar a la carpeta donde quieras añadir este retoBit.
 
 Utiliza el siguiente comando:
 
@@ -55,42 +56,33 @@ Ahora se va a crear un nuevo directorio con el nombre del retobit.
 
 ## Parte 1: Analiza el código
 
-Este puede ser un ejemplo real que te vayas a encontrar en tu trabajo. Hay algo que ya está siendo desarrollado y te toca hacer el siguiente paso. Lo primero que deberás hacer es fijarte en los archivos que tienes en la carpeta Java. Analiza su relación y funcionalidad. Fíjate en el tipo de datos que tenemos, el tipo de clases, etc.
+Este puede ser un ejemplo real que te vayas a encontrar en tu trabajo. Hay algo que ya está siendo desarrollado y te toca hacer el siguiente paso. Lo primero que deberás hacer es fijarte en los archivos que tienes en la carpeta src/main/java. Analiza su relación y funcionalidad. Fíjate en el tipo de archivos que tenemos. También hay algún comentario del developer anterior. 
 
 ## Parte 2: Completa la clase Character
 
-A la clase Character le faltan métodos.
-Impleméntalos. 
+Te habrás fijado que la clase Character parece tener un error. Aunque tiene sus propiedades y su constructor, no nos compila el código. ¿Por qué será?🤔
 
-\- Pero Marcel, no me has dicho qué métodos debo implementar...
+Averigua el motivo a través de los errores que se muestren. 
 
-\- ¿No? ¿Seguro? 🤔 Ok, voy a dejar que el código hable por mí... 
+Tu manager te ha dejado este diagrama:
+
+![diagrama UML](public/diagram.png)
+
+No tienes ni idea de lo que es un diagrama UML 🤷‍♀️, pero parece bastante claro que en el diagrama aparecen varias clases, interfaz, etc.
+
+Añade los métodos necesarios y modifica el tipo de clase para que coincida con el diagrama. Tu manager te ha dejado claro que de Character no debemos crear instancias directamente. En un futuro quieren implementar las clases de Mage y Warrior. Pero te han dejado claro que esto no toca todavía.
 
 <details>
-  <summary>Pista</summary>
-Fíjate en la interfaz de Combatant y verás todos los métodos a implementar.
-Si intentas ejecutar los tests saltará error y te dirá qué métodos faltan.
+  <summary>Pista 🕵️‍♀️</summary>
+Fíjate en que las clases de Mage y Warrior en el diagrama tiene el símbolo "C", en cambio, la clase Character tiene la "A". Esto significa que la clase Character debe ser abstracta. Los métodos los puedes poner en cualquier clase, pero el diagrama te dice dónde ponerlos. 
 
 </details>
 
-Asegúrate de que el status del character cambia a DEAD cuando la vida es 0. Y que la vida no puede ser menor a 0.
-
-## Parte 3: Añade varias clases heredadas
-
-Crea dos clases que representen tipos específicos de personajes de RPG: Warrior y Mage (se deben llamar así). Estas clases deberán heredar de Character y tener propiedades extra:
-
-- Warrior debe tener *defense* (int). Serán puntos extra de defensa.
-- Mage debe tener *mana* (int). Los puntos de magia que tiene para realizar hechizos.
-
-**Recuerda que las propiedades y clases deben llamarse tal cual pedimos en las instrucciones. Si no es así los tests no pasarán.*
+**Para testear esta parte puedes ejecutar los tests de CharacterTest. No compilará correctamente hasta que resuelvas los errores que te indica IntelliJ*
 
 ## Testing
 
-Para comprobar si has realizado bien el ejercicio ejecuta los tests ubicados en **src/test**. Hay un archivo para cada parte del RetoBit.
-
-- **CharacterTest**
-- **MageTest**
-- **WarriorTest**
+Para comprobar si has realizado bien el ejercicio ejecuta los tests ubicados en **src/test/CharacterTest**
 
 Puedes ejecutar los tests de cada uno de los archivos pulsando en él con el botón derecho y *Run NombreDelArchivoTest*. También puedes pulsar con el botón derecho en la carpeta */test/java* y seleccionar *Run all tests* para ejecutarlos todos a la vez. 
 

@@ -1,14 +1,14 @@
-abstract class Character {
+class Character implements Combatant {
     // 🗒️ PROPIEDADES
     protected String name;
     protected int health;
-    protected Status status;
+    // le falta el status
 
     // 🏗️ CONSTRUCTOR
-    protected Character(String name, int health){
+    protected Character(String name, int health) {
         this.name = name;
         this.health = health;
-        this.status = Status.REGULAR;
+        // el status inicial debe ser siempre REGULAR
     }
 
 }
