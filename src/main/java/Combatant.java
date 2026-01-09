@@ -5,3 +5,4 @@ public interface Combatant {
     String getName();                      // Obtener el nombre
     String getStatus();                    // Obtener el estado (Vivo, Muerto, etc.)
 }
+
