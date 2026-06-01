@@ -1,15 +1,16 @@
 abstract class Character implements Combatant {
+    protected Status status;
     // 🗒️ PROPIEDADES
     protected String name;
     protected int health;
-    protected Status status;
+    // le falta el status
 
     // 🏗️ CONSTRUCTOR
     protected Character(String name, int health) {
         this.name = name;
         this.health = health;
-        // el status inicial debe ser siempre REGULAR
         this.status = Status.REGULAR;
+        // el status inicial debe ser siempre REGULAR
     }
 
     @Override
@@ -25,6 +26,7 @@ abstract class Character implements Combatant {
     public boolean isAlive() {
         return this.health > 0;
     }
+
     @Override
     public int getCurrentHealth() {
         return this.health;
