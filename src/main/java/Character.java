@@ -1,4 +1,4 @@
-public abstract class Character implements ICombatant {
+abstract class Character implements ICombatant {
     // 🗒️ PROPIEDADES
     protected String name;
     protected int health;
